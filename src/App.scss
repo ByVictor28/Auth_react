@@ -1,0 +1,23 @@
+@mixin flexCenter($j:center,$a:"center",$d:"row") {
+    display: flex;
+    justify-content: $j;
+    align-items: $a;
+    flex-direction: $d;
+}
+input {
+
+    &[type=submit]{
+        padding: 1rem !important;
+        border: none;
+        background: #2F80ED;
+        border-radius: 0.5rem;
+        border: none;
+        color: white;
+        font-weight: 700;
+        transition: background 1s ease;
+
+        &:hover{    
+            background: #003c8a;
+        }
+    }
+}
